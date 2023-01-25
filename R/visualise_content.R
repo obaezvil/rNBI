@@ -17,7 +17,7 @@
 render_lectures <- function(lecture){
   
   # Setting the directory
-  dir <- .get_libpath("AGEPbeginners")
+  dir <- .get_libpath("rNBI")
   dir <- file.path(dir, "doc")
   
   # Setting the lecture names
@@ -64,7 +64,7 @@ render_lectures <- function(lecture){
 render_exercises <- function(exercise, solved = FALSE){
   
   # Setting the directory
-  dir <- .get_libpath("AGEPbeginners")
+  dir <- .get_libpath("rNBI")
   dir <- file.path(dir, "doc")
   
   # Setting the lecture names
