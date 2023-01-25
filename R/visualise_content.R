@@ -40,7 +40,7 @@ render_lectures <- function(lecture){
     browseURL(file.path(dir, "Lecture2_Introduction_to_R_II.html"))
   } else if (lecture == "Lecture3"){
     browseURL(file.path(dir, "Lecture3_Rasters_and_spatial_data.html"))
-  # } else if (lecture == "Lecture4"){
+  } # else if (lecture == "Lecture4"){
   #   browseURL(file.path(dir, "Lecture4_Data_processing.html"))
   # } else if (lecture == "Lecture5"){
   #   browseURL(file.path(dir, "Lecture5_Spatial_and_temporal_statistics.html"))
