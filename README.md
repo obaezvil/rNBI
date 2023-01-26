@@ -26,3 +26,8 @@ Open the first lecture:
 ```r
 render_lectures("Lecture1") 
 ```
+
+In case that the download failed with the following error: *Error in utils::download.file*, you can try to increase the timeout for the downloads as follows and try again.
+```r
+options(timeout=500) 
+```
