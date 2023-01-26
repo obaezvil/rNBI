@@ -8,7 +8,7 @@ render_exercises(exercise, solved = FALSE)
 }
 \arguments{
 \item{exercise}{character object indicating which exercise to visualise:
-'Exercise1', 'Exercise2', or 'Exercise3'}
+'Practical_exercise1', 'Practical_exercise1.1', or 'Practical_exercise1.2'}
 
 \item{solved}{logical argument. Should the solution be displayed? The default is FALSE}
 }

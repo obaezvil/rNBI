@@ -68,19 +68,19 @@ render_exercises <- function(exercise, solved = FALSE){
   dir <- file.path(dir, "doc")
   
   # Setting the lecture names
-  exercises <- paste0("Practical_exercise", 1:3)
+  exercises <- paste0("Practical_exercise", c(1, 1.1, 1.2))
   
   # Checking if the name corresponds to the existing lectures
   if(!exercise %in% exercises)
     stop("Please provide the proper name of the exercise:
-          'Practical_exercise1', 'Practical_exercise2', or 'Practical_exercise3'")
+          'Practical_exercise1', 'Practical_exercise1.1', or 'Practical_exercise1.2'")
   
   # Checking if the parameter solved is logical
   if(!is.logical(solved))
     stop("The parameter 'solved' must be either TRUE or FALSE")
   
   # Extracting number
-  nbr <- substr(exercise, nchar(exercise), nchar(exercise))
+  nbr <- strsplit(exercise, "Practical_exercise")[[1]][2]
   
   if(solved){
     browseURL(file.path(dir, paste0("Practical_exercise", nbr, "_solved.html")))
