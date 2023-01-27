@@ -12,7 +12,7 @@
 
 Make sure that devtools are installed:
 ```r
-install.packages("devtools")
+install.packages("remotes")
 ```
 Install the rNBI package from GitHub :
 ```r
