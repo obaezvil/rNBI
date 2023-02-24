@@ -8,6 +8,17 @@
 
 - 3.  Raster files and spatial data
 
+- 4.  Data processing
+
+- 5.  Spatial and temporal statistics
+
+- 6.  Automating downloading
+
+- 7.  Functions and parallel computation
+
+- 8.  Advanced spatial and temporal statistics
+
+
 ### Installation and usage
 
 Make sure that devtools are installed:
@@ -30,4 +41,5 @@ render_lectures("Lecture1")
 In case that the download failed with the following error: *Error in utils::download.file*, you can try to increase the timeout for the downloads as follows and try again.
 ```r
 options(timeout=500) 
+remotes::install_github("obaezvil/rNBI")
 ```
