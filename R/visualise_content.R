@@ -8,6 +8,8 @@
 #'   \item{'Lecture4': }{Data processing}
 #'   \item{'Lecture5': }{Spatial and temporal statistics}
 #'   \item{'Lecture6': }{Automating downloading}
+#'   \item{'Lecture7': }{Functions and parallel computation}
+#'   \item{'Lecture8': }{Advanced spatial and temporal statistics}
 #'}
 #'
 #' @return this function directs the user to the selected lecture.
@@ -32,7 +34,12 @@ render_lectures <- function(lecture){
     stop("Please provide the proper name of the lecture: 
           'Lecture1' : Introduction to R - Part 1
           'Lecture2' : Introduction to R - Part 2
-          'Lecture3' : Raster files and spatial data")
+          'Lecture3' : Raster files and spatial data
+          'Lecture4' : Data processing
+          'Lecture5' : Spatial and temporal statistics
+          'Lecture6' : Automating downloading
+          'Lecture7' : Functions and parallel computation
+          'Lecture8' : Advanced spatial and temporal statistics")
   
   if(lecture == "Lecture1"){
     browseURL(file.path(dir, "Lecture1_Introduction_to_R_I.html"))
@@ -40,13 +47,17 @@ render_lectures <- function(lecture){
     browseURL(file.path(dir, "Lecture2_Introduction_to_R_II.html"))
   } else if (lecture == "Lecture3"){
     browseURL(file.path(dir, "Lecture3_Rasters_and_spatial_data.html"))
-  } # else if (lecture == "Lecture4"){
-  #   browseURL(file.path(dir, "Lecture4_Data_processing.html"))
-  # } else if (lecture == "Lecture5"){
-  #   browseURL(file.path(dir, "Lecture5_Spatial_and_temporal_statistics.html"))
-  # } else if (lecture == "Lecture6"){
-  #   browseURL(file.path(dir, "Lecture6_Automating_downloading.html"))
-  # }
+  } else if (lecture == "Lecture4"){
+    browseURL(file.path(dir, "Lecture4_Data_processing.html"))
+  } else if (lecture == "Lecture5"){
+    browseURL(file.path(dir, "Lecture5_Spatial_and_temporal_statistics.html"))
+  } else if (lecture == "Lecture6"){
+    browseURL(file.path(dir, "Lecture6_Automating_downloading.html"))
+  } else if (lecture == "Lecture7"){
+    browseURL(file.path(dir, "Lecture7_Functions_and_parallel_computation.html"))
+  } else if (lecture == "Lecture8"){
+    browseURL(file.path(dir, "Lecture8_Advanced_spatial_and_temporal_statistics.html"))
+  }
     
 } # end render_lectures
 
