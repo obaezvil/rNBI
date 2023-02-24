@@ -12,6 +12,11 @@ render_lectures(lecture)
   \item{'Lecture1': }{Introduction to R - Part 1}
   \item{'Lecture2': }{Introduction to R - Part 2}
   \item{'Lecture3': }{Raster files and spatial data}
+  \item{'Lecture4': }{Data processing}
+  \item{'Lecture5': }{Spatial and temporal statistics}
+  \item{'Lecture6': }{Automating downloading}
+  \item{'Lecture7': }{Functions and parallel computation}
+  \item{'Lecture8': }{Advanced spatial and temporal statistics}
 }}
 }
 \value{
